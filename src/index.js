@@ -1,1 +1,1 @@
-import './my-taimer'
+import './my-taimer';

@@ -1,4 +1,6 @@
-import { LitElement, html, css } from 'lit-element';
+import { LitElement, html } from 'lit-element';
+
+import { play, pause, replay } from './icons';
 
 export class MyTaimer extends LitElement {
 
@@ -10,19 +12,24 @@ export class MyTaimer extends LitElement {
             remaining: { state: true },
         };
     }
-    static styles = css `
+
+    static styles = css `/* playground-fold */
+
     :host {
-        display: inline-block;
-        min-witdh: 4em;
-        text-align: center;
-        padding: 0.2em;
-        margin: 0.2em 0.1em;
+      display: inline-block;
+      min-width: 4em;
+      text-align: center;
+      padding: 0.2em;
+      margin: 0.2em 0.1em;
     }
-    footer{
-        user-select: none;
-        font-size: 0.6em;
+    footer {
+      user-select: none;
+      font-size: 0.6em;
     }
-    `;
+    /* playground-fold-end */`;
+
+
+
     constructor() {
         super();
         this.duration = 60;
